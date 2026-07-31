@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.runorion.com/mcp/setup.md
+docs: https://docs.runorion.com/mcp/setup.md
+summary:
+  types: [oauth2]
+  flows: [browser-login]
+  surface: mcp
+schemes:
+- name: MCP OAuth (browser login)
+  type: oauth2
+  flow: browser-based authorization
+  transport: http
+  server: https://g.runorion.com/mcp
+  description: >-
+    The Orion remote MCP server authenticates via a browser-based OAuth login using the user's Orion
+    credentials. Clients (Claude Code, Claude Desktop, Cursor, Windsurf) add the server URL and complete
+    an interactive authentication flow — no static API key or manual token is issued to the client.
+  sources: [https://docs.runorion.com/mcp/setup.md]
+notes: >-
+  Orion is a commercial SaaS product with no documented public REST/OpenAPI surface; its programmatic
+  access is the MCP server, which brokers authentication through the interactive OAuth login above.

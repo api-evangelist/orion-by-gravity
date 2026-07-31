@@ -1,0 +1,45 @@
+# Orion Public Docs
+
+> Documentation for Orion, the collaborative analytics platform built by Gravity (bygravity.com). Learn how to connect data sources, run analyses in natural language, build a shared knowledge base, and turn insights into dashboards, reports, and scheduled workflows.
+
+> ## Agent Instructions
+> Orion is a collaborative analytics platform built by Gravity (bygravity.com). It connects to data warehouses like Snowflake, BigQuery, Databricks, Redshift, Athena, Fabric, PostgreSQL, and MySQL, and lets teams ask questions in natural language to get shared analyses, dashboards, reports, and slide decks. When referencing Orion features, always link to the relevant documentation page. Orion is not open-source; it is a commercial SaaS product accessed at runorion.com.
+
+## Docs
+
+- [Basics & Navigation](https://docs.runorion.com/chat/basics-navigation.md): Navigate Orion's Chat interface: start conversations, browse chat history by project, and share analyses with teammates.
+- [Best Practices](https://docs.runorion.com/chat/best-practices.md): Get better results from Orion faster: organize projects by use case, write clear prompts, iterate in 2-3 passes, use relative dates for scheduled analyses, and manage memory effectively.
+- [File Uploads](https://docs.runorion.com/chat/file-uploads.md): Upload PDFs, Word documents, Excel spreadsheets, and CSVs to provide context or use as queryable data sources in Orion analyses.
+- [Memory](https://docs.runorion.com/chat/memory.md): Orion's memory system retains your preferences, project context, and data requirements across conversations so each analysis improves over time.
+- [Running Analyses](https://docs.runorion.com/chat/running-analyses.md): Ask Orion a question in natural language and get an AI-generated analysis with charts, tables, and code — captured as a reusable notebook you can schedule, share, or turn into a dashboard.
+- [Share Chat Conversations](https://docs.runorion.com/chat/share-conversations.md): Share an Orion chat conversation with a teammate via a link so they can view the full history and continue the analysis from where you left off.
+- [Company Information](https://docs.runorion.com/configuration/company-information.md): Provide company-wide context that Orion references across every project and conversation.
+- [Data Sources Management](https://docs.runorion.com/configuration/data-sources.md): Connect data warehouses and platforms — BigQuery, Snowflake, Databricks, Redshift, Athena, Fabric, PostgreSQL, MySQL, Delta Lake, Looker, Shopify, and Google Analytics — and manage them across your Orion tenant.
+- [Global Configuration](https://docs.runorion.com/configuration/global-configuration.md): Administrators use Global Configuration to manage tenant-wide settings including company information, data source connections, and user management.
+- [Groups](https://docs.runorion.com/configuration/groups.md): Organize users into groups that share access to projects, data sources, Knowledge Base pages, and integrations — ideal for modeling teams, departments, or customer cohorts.
+- [Sudo](https://docs.runorion.com/configuration/sudo.md): Admins can temporarily act as another user to reproduce bugs and troubleshoot issues, or grant Gravity support time-limited access to investigate problems in the tenant.
+- [User Management](https://docs.runorion.com/configuration/user-management.md): Invite users, assign Admin/Analyst/Viewer roles, manage group membership, and control access across your Orion tenant.
+- [Connecting Data Sources](https://docs.runorion.com/connecting-data-sources.md): Step-by-step guides for connecting Orion to BigQuery, Snowflake, Databricks, Redshift, Athena, Fabric, PostgreSQL, MySQL, Delta Lake, Looker, and dbt — including credentials, grants, and network requirements.
+- [Knowledge Base](https://docs.runorion.com/core-concepts/knowledge-base.md): Give Orion structured business context — metric definitions, SOPs, company information, and analytical methods — through a wiki-style Knowledge Base that it references during every analysis.
+- [Projects](https://docs.runorion.com/core-concepts/projects.md): Projects are the primary organizational unit in Orion — bundling chats, analyses, data sources, knowledge base pages, and memories into a single workspace you can share with your team.
+- [Search](https://docs.runorion.com/core-concepts/search.md): Use global search (Cmd+K) to find projects, dashboards, reports, conversations, knowledge base pages, metrics, and workflows across your entire Orion workspace.
+- [Welcome to Orion](https://docs.runorion.com/index.md): Orion is a collaborative analytics platform that connects to your data warehouse and lets your entire team ask questions in natural language, share analyses, and build dashboards, reports, and scheduled workflows — together.
+- [Best Practices](https://docs.runorion.com/knowledge-base/best-practices.md): Write short, focused pages; start with a clear summary; keep content current; and enable 8-10 pages per project for the best Knowledge Base results.
+- [Creating & Managing Pages](https://docs.runorion.com/knowledge-base/creating-pages.md): Create, edit, upload, and organize Knowledge Base pages using the markdown editor, file uploads, drag-and-drop folders, revision history, and the page-locking change request workflow.
+- [Knowledge Base](https://docs.runorion.com/knowledge-base/overview.md): Build a centralized wiki of company documentation — metric definitions, SOPs, business rules, and guidelines — that Orion references and cites during analyses.
+- [External Wiki Integrations](https://docs.runorion.com/knowledge-base/wiki-integrations.md): Import pages from Notion, Confluence, and GitHub directly into Orion's Knowledge Base — with one-time import or automatic daily sync to keep content up to date.
+- [MCP Server](https://docs.runorion.com/mcp/overview.md): The Orion MCP server lets AI assistants like Claude & Gemini Enterprise run analyses, monitor KPIs, trigger workflows, and search your knowledge base using the Model Context Protocol — no installation required.
+- [Setup](https://docs.runorion.com/mcp/setup.md): Connect Claude Code, Claude Desktop, Cursor, or Windsurf to Orion's remote MCP server at https://g.runorion.com/mcp — just add the URL and authenticate.
+- [Tools Reference](https://docs.runorion.com/mcp/tools.md): Reference for all 20 Orion MCP server tools: ask_orion for natural language analysis, list_projects, list_metrics, get_metric_insights, run_workflow, search_wiki, and more.
+- [Troubleshooting](https://docs.runorion.com/mcp/troubleshooting.md): Fix common Orion MCP server issues: authentication failures, connection errors, ask_orion only returning an acknowledgment, and empty artifact or metric results.
+- [Email Digest](https://docs.runorion.com/profile-settings/email-digest.md): Set up a weekly AI-generated email that summarizes the latest insights and activity from your selected Orion projects, personalized to your role and focus areas.
+- [Integrations & Connectors](https://docs.runorion.com/profile-settings/integrations.md): Connect Orion to Slack for in-channel analysis, Google Calendar for schedule context, and Google Slides for auto-generated presentations.
+- [Profile Management](https://docs.runorion.com/profile-settings/profile-management.md): Update your name, username, email, and profile bio so Orion can personalize analyses to your role, responsibilities, and communication preferences.
+- [User Onboarding & Invitations](https://docs.runorion.com/profile-settings/user-onboarding.md): Invite a new team member to your Orion tenant by email, walk them through account creation, and optionally import their LinkedIn profile for personalized analyses.
+- [User Preferences](https://docs.runorion.com/profile-settings/user-preferences.md): Choose your default chart type — bar, pie, scatter, heat map, combo, or table — so Orion formats every analysis to your preference.
+- [Quickstart](https://docs.runorion.com/quickstart.md): Get from first login to your first AI-powered data analysis in about 15 minutes. Create a project, ask a question in plain language, and turn the result into a dashboard, report, or scheduled workflow.
+
+## Optional
+
+- [Website](https://bygravity.com)
+- [Blog](https://bygravity.com/resources)

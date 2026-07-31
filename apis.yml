@@ -1,8 +1,28 @@
 aid: orion-by-gravity
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/orion-by-gravity.png
 name: Orion by Gravity
-description: 'Orion by Gravity is a company surfaced as a portfolio company of foundry-group and added
-  to the API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Orion by Gravity is a collaborative, AI-native analytics platform built by Gravity (bygravity.com)
+  that connects directly to your data warehouse — Snowflake, BigQuery, Databricks, Redshift, Athena,
+  Fabric, PostgreSQL, and MySQL — and lets teams ask questions in natural language to get shared
+  analyses, dashboards, reports, scheduled workflows, and slide decks. Orion functions as an autonomous
+  AI analyst that learns business context from a wiki-style Knowledge Base, integrates with Slack, Notion,
+  Confluence, Looker, and Google Slides, and can be embedded as a white-label surface. Its primary
+  programmatic surface is a remote Model Context Protocol (MCP) server at https://g.runorion.com/mcp that
+  exposes twenty tools for AI assistants like Claude and Gemini Enterprise to run analyses, monitor KPIs,
+  trigger workflows, and search the knowledge base. The platform is SOC 2 Type 2 audited.
 url: https://raw.githubusercontent.com/api-evangelist/orion-by-gravity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Climate
-apis: []
+- Analytics
+- Business Intelligence
+- Artificial Intelligence
+- Data
+- MCP
+- Data Warehouse
+- SaaS
+apis:
+- name: Orion MCP Server
+  description: >-
+    Remote Model Context Protocol (MCP) server that lets AI assistants (Claude Code, Claude Desktop,
+    Cursor, Windsurf, Gemini Enterprise) run natural-language analyses, list and execute metrics, trigger
+    workflows, manage conversations and artifacts, and search the Orion knowledge base. Twenty tools,
+    HTTP transport, browser-based OAuth authentication — no installation required.
+  humanURL: https://docs.runorion.com/mcp/overview.md
+  baseURL: https://g.runorion.com/mcp
+  properties:
+  - type: MCPServer
+    url: mcp/orion-by-gravity-mcp.yml
+  - type: Documentation
+    url: https://docs.runorion.com/mcp/overview.md
+  - type: APIReference
+    url: https://docs.runorion.com/mcp/tools.md
+  - type: Authentication
+    url: authentication/orion-by-gravity-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +68,48 @@ maintainers:
 common:
 - type: Website
   url: https://www.bygravity.com
+- type: DeveloperPortal
+  url: https://docs.runorion.com
+- type: Documentation
+  url: https://docs.runorion.com
+- type: APIReference
+  url: https://docs.runorion.com/mcp/tools.md
+- type: GettingStarted
+  url: https://docs.runorion.com/quickstart.md
+- type: MCPServer
+  url: mcp/orion-by-gravity-mcp.yml
+- type: LLMsTxt
+  url: llms/orion-by-gravity-llms.txt
+- type: Blog
+  url: https://bygravity.com/blog
+- type: ChangeLog
+  url: changelog/orion-by-gravity-changelog.yml
+- type: TermsOfService
+  url: https://bygravity.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://bygravity.com/privacy
+- type: SignUp
+  url: https://app.runorion.com
+- type: TrustCenter
+  url: security/orion-by-gravity-trust-center.yml
+- type: Compliance
+  url: https://trust.bygravity.com
+- type: Security
+  url: https://bygravity.com/security
+- type: VulnerabilityDisclosure
+  url: security/orion-by-gravity-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/orion-by-gravity-security.txt
+- type: WellKnown
+  url: well-known/orion-by-gravity-well-known.yml
+- type: DomainSecurity
+  url: security/orion-by-gravity-domain-security.yml
+- type: Authentication
+  url: authentication/orion-by-gravity-authentication.yml
+- type: Conformance
+  url: conformance/orion-by-gravity-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

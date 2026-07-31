@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://bygravity.com/orion/changelog
+scheme: semver
+current_version: 2.10.6
+entries:
+- version: 2.10.6
+  date: '2026-07-09'
+  title: Conversation Renaming and Reliability Improvements
+  highlights: Rename chats in the history sidebar for better organization; bug fixes for network interruptions.
+  breaking: false
+- version: 2.8.27
+  date: '2026-06-29'
+  title: Improved Schema Loading for Large Datasources
+  highlights: Schema pages load almost instantly for large Looker/warehouse connections; resolved access bugs.
+  breaking: false
+- version: 2.8.18
+  date: '2026-06-22'
+  title: Per-Conversation Context Control
+  highlights: Toggle memory, knowledge base, and past chats on/off with new Context controls in the chat box.
+  breaking: false
+- version: 2.8.14
+  date: '2026-06-16'
+  title: Improved Email Digest Design
+  highlights: Weekly digest email with cleaner design, key metrics at a glance, and findings linked to sources.
+  breaking: false
+- version: 2.8.11
+  date: '2026-06-16'
+  title: Redesigned Knowledge Base Review Experience
+  highlights: Proposed changes display in markdown with visual minimap navigation, Google Docs-style suggestions.
+  breaking: false
+- version: 2.8.5
+  date: '2026-06-10'
+  title: Behavioral Intelligence and Document Search Bug Fix
+  highlights: Orion understands query frequency, common filters, and co-queried fields without LookML repos.
+  breaking: false
+- version: 2.8.0
+  date: '2026-06-05'
+  title: Workflows 2.0, Enhanced Search, and Notification Improvements
+  highlights: Visual workflow builder canvas and decision steps for LLM-powered branching logic.
+  breaking: false

@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://bygravity.com/security
+url: https://trust.bygravity.com
+trust_platform: Vanta
+certifications:
+- SOC 2 Type 2
+certification_detail: >-
+  Independently audited against the Security, Availability, and Confidentiality trust services criteria
+  (SOC 2 Type 2). SOC 2 report available under NDA.
+resources:
+- SOC 2 report (available under NDA)
+- Sub-processor list
+- Security FAQs
+evidence:
+- source: https://bygravity.com/security
+  keywords: [soc 2 type 2, trust center, sub-processors]
+- source: https://trust.bygravity.com
+  keywords: [trust center, vanta]

@@ -1,0 +1,81 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://docs.runorion.com/mcp/overview.md
+server:
+  name: orion
+  transport: http
+  url: https://g.runorion.com/mcp
+  authentication: oauth
+  auth_note: Browser-based OAuth login with Orion credentials; no installation required.
+  clients:
+  - Claude Code
+  - Claude Desktop
+  - Cursor
+  - Windsurf
+  - Gemini Enterprise
+  setup_docs: https://docs.runorion.com/mcp/setup.md
+  tools_docs: https://docs.runorion.com/mcp/tools.md
+  install:
+    claude_code: claude mcp add orion --transport http https://g.runorion.com/mcp
+tools:
+- name: ask_orion
+  description: Send a natural language question to Orion for AI-powered data analysis; requires message and user_id.
+  category: action
+- name: create_conversation
+  description: Start a new Orion conversation with optional project_id and title.
+  category: action
+- name: execute_metric
+  description: Trigger metric execution to refresh its current value using metric_id.
+  category: action
+- name: run_workflow
+  description: Trigger workflow (insight maker) execution via workflow_id.
+  category: action
+- name: delete_artifact
+  description: Remove a slide deck, dashboard, or report using artifact_id.
+  category: action
+- name: list_projects
+  description: Retrieve Orion projects accessible to the user; supports search and limit.
+  category: read
+- name: list_users
+  description: Display all organization users with ID, name, and role.
+  category: read
+- name: list_conversations
+  description: Fetch chat conversations for a user, filterable by project_id.
+  category: read
+- name: get_conversation_history
+  description: Retrieve messages from an existing conversation; poll for results after ask_orion.
+  category: read
+- name: list_metrics
+  description: Retrieve KPIs for a project; can filter by pinned status.
+  category: read
+- name: get_metric
+  description: Obtain full metric details including definition, code, sources, and latest result.
+  category: read
+- name: get_metric_results
+  description: Access historical execution results for a metric.
+  category: read
+- name: get_metric_insights
+  description: Get auto-detected metric insights showing significant changes and anomalies.
+  category: read
+- name: list_workflows
+  description: List insight makers for a project.
+  category: read
+- name: get_workflow
+  description: Retrieve workflow details including notebook data and metric references.
+  category: read
+- name: get_workflow_results
+  description: Access execution results for a workflow.
+  category: read
+- name: list_artifacts
+  description: List slide decks, dashboards, or reports; filterable by artifact type.
+  category: read
+- name: get_artifact
+  description: Retrieve artifact content as markdown using artifact_id.
+  category: read
+- name: search_wiki
+  description: Search Orion's knowledge base with optional project scope.
+  category: read
+- name: list_recommendations
+  description: Get AI-generated recommendations for a project with suggested analysis prompts.
+  category: read

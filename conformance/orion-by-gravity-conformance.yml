@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.runorion.com/mcp/overview.md
+standards:
+- id: mcp
+  name: Model Context Protocol
+  conforms: true
+  evidence: Published remote MCP server at https://g.runorion.com/mcp with 20 tools over HTTP transport.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: true
+  evidence: MCP server authenticates via browser-based OAuth login (docs.runorion.com/mcp/setup.md).
+- id: soc2-type2
+  name: SOC 2 Type 2
+  conforms: true
+  evidence: Independently audited against Security, Availability, and Confidentiality trust criteria (bygravity.com/security).
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: true
+  evidence: /.well-known/security.txt served at app.runorion.com with Contact and Expires.
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details
+  conforms: false
+  evidence: No public OpenAPI/REST error surface documented.
