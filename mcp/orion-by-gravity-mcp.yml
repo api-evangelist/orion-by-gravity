@@ -20,7 +20,8 @@ server:
     claude_code: claude mcp add orion --transport http https://g.runorion.com/mcp
 tools:
 - name: ask_orion
-  description: Send a natural language question to Orion for AI-powered data analysis; requires message and user_id.
+  description: Send a natural language question to Orion for AI-powered data analysis; requires message
+    and user_id.
   category: action
 - name: create_conversation
   description: Start a new Orion conversation with optional project_id and title.
@@ -79,3 +80,10 @@ tools:
 - name: list_recommendations
   description: Get AI-generated recommendations for a project with suggested analysis prompts.
   category: read
+deployment:
+  mode: remote
+  endpoint: https://g.runorion.com/mcp
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
