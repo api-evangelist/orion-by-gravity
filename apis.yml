@@ -41,6 +41,15 @@ tags:
 - Data
 - MCP
 - Data Warehouse
+- Software-as-a-Service
+tags_raw:
+- Company
+- Analytics
+- Business Intelligence
+- Artificial Intelligence
+- Data
+- MCP
+- Data Warehouse
 - SaaS
 apis:
 - name: Orion MCP Server
