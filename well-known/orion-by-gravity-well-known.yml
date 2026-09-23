@@ -1,4 +1,4 @@
-generated: '2026-07-20'
+generated: '2026-09-19'
 method: searched
 source: probe of /.well-known/ across Orion/Gravity hosts
 hosts:
@@ -25,3 +25,30 @@ hosts:
   documents:
   - path: /.well-known/security.txt
     status: 404
+- host: https://g.runorion.com
+  documents:
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: orion-by-gravity-g-oauth-protected-resource.json
+    bytes: 126
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: orion-by-gravity-g-oauth-authorization-server.json
+    bytes: 474
+  path_echo_control: passed
+x-mcp-probe:
+  probed: '2026-09-19'
+  issue: roadmap#321, roadmap#337
+  documents:
+  - host: https://g.runorion.com
+    path: /.well-known/oauth-protected-resource
+    file: orion-by-gravity-g-oauth-protected-resource.json
+  - host: https://g.runorion.com
+    path: /.well-known/oauth-authorization-server
+    file: orion-by-gravity-g-oauth-authorization-server.json
+  validated_on: resource (RFC 9728) / issuer (RFC 8414, OIDC)
+  negative_control: one per host; a 2xx JSON object at an impossible path discards the host
+note: 'MCP-host OAuth discovery added 2026-09-19 (roadmap#321/#337): the harvest visits a provider''s
+  primary hosts, and RFC 9728 protected-resource metadata lives on the MCP host, so these documents existed
+  and were invisible to the scorer. Fetched live and validated on `resource`/`issuer`; one negative control
+  per host.'
